@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="viewport"content="width=device-width,initial-scale=1">
+<link rel="stylesheet"href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body font-family:Helvetica;>
+<div background="./image/zhubeijing4.png"data-role="page" id="pageone">
+  <div data-role="header" data-theme="b">
+<a href="#pagetwo" data-transition="flip"data-role="button"data-icon="search" data-iconpos="notext">搜索</a>
+    <h1>北京天气</h1>
+<a href="#pagethree" data-transition="flip"data-role="button"data-icon="refresh" data-iconpos="notext">刷新</a>
+  </div>
+
+  <div data-role="content"style="background-color:#00cfff;">
+<!--温度,风力,天气,更新时间-->
+ <b style="color:white;font-size:60px">16 <span style="font-size:30px">℃</span></b>
+   <p style="color:white;font-size:15px;text-shadow:none">
+晴转多云</p>
+<p style="font-family:verdana;color:white;font-size:15px;text-shadow:none">
+西南风3级</p>
+<p style="font-family:verdana;color:white;font-size:15px;text-shadow:none">
+更新时间：14:28</p>
+<br/>
+<br/>
+<!--空气质量和湿度 -->
+<div class="ui-grid-b">
+     <div style="text-align:center"class="ui-block-a">
+		<span style="font-family:verdana;color:white;font-size:15px;text-shadow:none">空气良 58</span>
+	</div>
+     <div style="text-align:center"class="ui-block-b" >
+		<span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">|</span>
+	 </div>
+     <div style="text-align:center"class="ui-block-c" >
+		<span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">相对湿度36%</span>
+	 </div>
+</div>
+<!--未来天气 data-inset="true"-->
+<div>
+    <ul data-role="listview" data-inset="true">
+        <li style="background-color:#33cccc;">
+			<div>
+				<p><span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">星期四</span>
+				<span>    </span>
+				<span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">多云<img src="./image/biz_plugin_weather_xiaoyu.png" width="20" height="20"></span></p>
+</div>
+</li>
+<li style="background-color:#33cccc;">
+			<div>
+				<p><span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">星期五</span>
+				<span>    </span>
+				<span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">小雪<img src="./image/biz_plugin_weather_xiaoxue.png"width="20" height="20"></span></p>
+</div>
+</li>
+<li style="background-color:#33cccc;">
+			<div>
+				<p><span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">星期六</span>
+				<span>    </span>
+				<span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">小雪<img src="./image/biz_plugin_weather_xiaoxue.png" width="20" height="20"></span></p>
+</div>
+</li>
+<li style="background-color:#33cccc;">
+			<div>
+				<p><span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">星期日</span>
+				<span>    </span>
+				<span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">小雪<img src="./image/biz_plugin_weather_xiaoxue.png" width="20" height="20"></span></p>
+</div>
+</li>
+      <li style="background-color:#33cccc;">
+			<div>
+				<p><span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">星期一</span>
+				<span>    </span>
+				<span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none">小雪<img src="./image/biz_plugin_weather_xiaoxue.png" width="20" height="20"></span></p>
+</div>
+</li>
+<li style="background-color:#33cccc;text-align:center"><span style="font-family:verdana;color:white;font-size:15px;text-align:center;text-shadow:none"><a href="#pagethree" >未来9天趋势预测</a></span></li> 
+</ul>
+</div>
+</br>
+<div>
+<p style="font-family:verdana;color:white;font-size:10px;text-align:center;text-shadow:none">Copyright pkufenghao.top</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header"data-theme="b">
+<a href="#pageone"  data-transition="flip" data-role="button"data-icon="arrow-l" data-iconpos="notext">返回</a>
+    <h1>搜索城市</h1>
+  </div>
+
+  <div data-role="content">
+<ul data-role="listview" data-autodividers="true" data-inset="true" data-filter="true"data-filter-placeholder="搜索城市">
+<li><a href="#">Adele</a></li>
+    <li><a href="#">Agnes</a></li>
+    <li><a href="#">Albert</a></li>
+    <li><a href="#">Billy</a></li>
+    <li><a href="#">Bob</a></li>
+<li><a href="#">Calvin</a></li>
+    <li><a href="#">Cameron</a></li>
+    <li><a href="#">Chloe</a></li>    
+</ul>
+  </div>
+</div> 
+
+
+<div data-role="page" id="pagethree">
+  <div data-role="header"data-theme="b">
+<a href="#pageone"  data-transition="flip" data-role="button"data-icon="arrow-l" data-iconpos="notext">返回</a>
+    <h1>刷新</h1>
+  </div>
+
+  <div data-role="content">
+    
+  </div>
+
+
+</div> 
+
+</body>
+</html>
